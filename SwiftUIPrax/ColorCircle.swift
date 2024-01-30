@@ -12,7 +12,6 @@ struct ColorCircle: View {
     var body: some View {
         ZStack {
             Circle()
-  //            .ignoresSafeArea() - Лишний тут
                 .foregroundColor(color)
                 .frame(width: 250, height: 250)
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))

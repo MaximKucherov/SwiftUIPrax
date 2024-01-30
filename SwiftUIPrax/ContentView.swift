@@ -12,7 +12,6 @@ struct ContentView: View {
     @State private var tapCount = 0
 
     var body: some View {
-
         VStack {
             SwiftLogo()
                 .padding()
@@ -26,8 +25,6 @@ struct ContentView: View {
         }
         .padding()
     }
-
-
 
     private var textInfo: some View {
         VStack(alignment: .leading) {

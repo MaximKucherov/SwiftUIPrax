@@ -12,9 +12,7 @@ struct SwiftImage: View {
         ZStack {
             Image("swift")
                 .resizable()
-//                .aspectRatio(contentMode: .fit)
                 .frame(width: 150,height: 150)
-
         }
     }
 }
