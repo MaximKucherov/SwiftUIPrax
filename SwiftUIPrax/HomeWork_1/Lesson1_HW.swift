@@ -11,6 +11,7 @@ struct Lesson1_HW: View {
 
     @State private var activeLightIndex = -1
     @State private var textButton = "START"
+    @State private var textLabel = ""
 
     let opacityOff = 1.0
     let opacityOn = 0.2
@@ -45,7 +46,14 @@ struct Lesson1_HW: View {
 
                 Spacer()
 
-                StartButton(activeLightIndex: $activeLightIndex, textButton: $textButton, lightColorCount: lightColor.count)
+                Text(textLabel)
+                    .foregroundStyle(Color.white)
+                    .bold()
+                    .font(.largeTitle)
+
+                Spacer()
+
+                StartButton(activeLightIndex: $activeLightIndex, textButton: $textButton, textLabel: $textLabel, lightColorCount: lightColor.count)
 
             }
         }

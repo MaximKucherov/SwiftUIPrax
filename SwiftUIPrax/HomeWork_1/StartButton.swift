@@ -11,12 +11,15 @@ struct StartButton: View {
 
     @Binding var activeLightIndex: Int
     @Binding var textButton: String
+    @Binding var textLabel: String
     let lightColorCount: Int
+    let actionText = ["Stop!", "Ready!", "Go!"]
 
     var body: some View {
         Button(action: {
             textButton = "NEXT"
             activeLightIndex = (activeLightIndex + 1) % lightColorCount
+            textLabel = actionText[activeLightIndex]
         }) {
             Text(textButton)
                 .font(.title)
