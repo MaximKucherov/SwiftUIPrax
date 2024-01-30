@@ -9,7 +9,11 @@ import SwiftUI
 
 struct SwiftLogo: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            ColorCircle(color: .orange)
+            SwiftImage()
+                .offset(CGSize(width: -10.0, height: -8.0))
+        }
     }
 }
 

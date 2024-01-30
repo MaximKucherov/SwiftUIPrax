@@ -9,7 +9,13 @@ import SwiftUI
 
 struct SwiftImage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image("swift")
+                .resizable()
+//                .aspectRatio(contentMode: .fit)
+                .frame(width: 150,height: 150)
+
+        }
     }
 }
 

@@ -11,6 +11,9 @@
 		D00E61382B6908CE004B51B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E61372B6908CE004B51B0 /* ContentView.swift */; };
 		D00E613A2B6908D0004B51B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00E61392B6908D0004B51B0 /* Assets.xcassets */; };
 		D00E613D2B6908D0004B51B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00E613C2B6908D0004B51B0 /* Preview Assets.xcassets */; };
+		D00E61442B6936F4004B51B0 /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E61432B6936F4004B51B0 /* ColorCircle.swift */; };
+		D00E61462B693D8C004B51B0 /* SwiftImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E61452B693D8C004B51B0 /* SwiftImage.swift */; };
+		D00E61482B693EB2004B51B0 /* SwiftLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E61472B693EB2004B51B0 /* SwiftLogo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		D00E61372B6908CE004B51B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D00E61392B6908D0004B51B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00E613C2B6908D0004B51B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D00E61432B6936F4004B51B0 /* ColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
+		D00E61452B693D8C004B51B0 /* SwiftImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftImage.swift; sourceTree = "<group>"; };
+		D00E61472B693EB2004B51B0 /* SwiftLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLogo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				D00E61352B6908CE004B51B0 /* SwiftUIPraxApp.swift */,
 				D00E61372B6908CE004B51B0 /* ContentView.swift */,
+				D00E61432B6936F4004B51B0 /* ColorCircle.swift */,
+				D00E61472B693EB2004B51B0 /* SwiftLogo.swift */,
+				D00E61452B693D8C004B51B0 /* SwiftImage.swift */,
 				D00E61392B6908D0004B51B0 /* Assets.xcassets */,
 				D00E613B2B6908D0004B51B0 /* Preview Content */,
 			);
@@ -139,6 +148,9 @@
 			files = (
 				D00E61382B6908CE004B51B0 /* ContentView.swift in Sources */,
 				D00E61362B6908CE004B51B0 /* SwiftUIPraxApp.swift in Sources */,
+				D00E61442B6936F4004B51B0 /* ColorCircle.swift in Sources */,
+				D00E61482B693EB2004B51B0 /* SwiftLogo.swift in Sources */,
+				D00E61462B693D8C004B51B0 /* SwiftImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
