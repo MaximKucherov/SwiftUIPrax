@@ -17,6 +17,9 @@
 		D086E8FC2B6962EC000CF25D /* Lesson1_HW.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086E8FB2B6962EC000CF25D /* Lesson1_HW.swift */; };
 		D086E9002B698642000CF25D /* TrafficLightCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086E8FF2B698642000CF25D /* TrafficLightCircles.swift */; };
 		D086E9022B69878B000CF25D /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086E9012B69878B000CF25D /* StartButton.swift */; };
+		D0BDE1BE2B792DFE00DD9448 /* ContentViewHW_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BDE1BD2B792DFE00DD9448 /* ContentViewHW_1.swift */; };
+		D0BDE1C02B792E1800DD9448 /* ColorLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BDE1BF2B792E1800DD9448 /* ColorLight.swift */; };
+		D0BDE1C22B792E3D00DD9448 /* ChangeColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BDE1C12B792E3D00DD9448 /* ChangeColorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		D086E8FB2B6962EC000CF25D /* Lesson1_HW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1_HW.swift; sourceTree = "<group>"; };
 		D086E8FF2B698642000CF25D /* TrafficLightCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightCircles.swift; sourceTree = "<group>"; };
 		D086E9012B69878B000CF25D /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		D0BDE1BD2B792DFE00DD9448 /* ContentViewHW_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHW_1.swift; sourceTree = "<group>"; };
+		D0BDE1BF2B792E1800DD9448 /* ColorLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLight.swift; sourceTree = "<group>"; };
+		D0BDE1C12B792E3D00DD9448 /* ChangeColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				D00E61472B693EB2004B51B0 /* SwiftLogo.swift */,
 				D00E61452B693D8C004B51B0 /* SwiftImage.swift */,
 				D086E9032B698AEB000CF25D /* HomeWork_1 */,
+				D0BDE1BB2B7921D100DD9448 /* Lesson_2 */,
 				D00E61392B6908D0004B51B0 /* Assets.xcassets */,
 				D00E613B2B6908D0004B51B0 /* Preview Content */,
 			);
@@ -86,11 +93,29 @@
 		D086E9032B698AEB000CF25D /* HomeWork_1 */ = {
 			isa = PBXGroup;
 			children = (
+				D0BDE1BC2B792D9700DD9448 /* HW_1 */,
 				D086E8FB2B6962EC000CF25D /* Lesson1_HW.swift */,
 				D086E8FF2B698642000CF25D /* TrafficLightCircles.swift */,
 				D086E9012B69878B000CF25D /* StartButton.swift */,
 			);
 			path = HomeWork_1;
+			sourceTree = "<group>";
+		};
+		D0BDE1BB2B7921D100DD9448 /* Lesson_2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lesson_2;
+			sourceTree = "<group>";
+		};
+		D0BDE1BC2B792D9700DD9448 /* HW_1 */ = {
+			isa = PBXGroup;
+			children = (
+				D0BDE1BD2B792DFE00DD9448 /* ContentViewHW_1.swift */,
+				D0BDE1BF2B792E1800DD9448 /* ColorLight.swift */,
+				D0BDE1C12B792E3D00DD9448 /* ChangeColorButton.swift */,
+			);
+			path = HW_1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +191,10 @@
 				D00E61382B6908CE004B51B0 /* ContentView.swift in Sources */,
 				D00E61362B6908CE004B51B0 /* SwiftUIPraxApp.swift in Sources */,
 				D086E8FC2B6962EC000CF25D /* Lesson1_HW.swift in Sources */,
+				D0BDE1BE2B792DFE00DD9448 /* ContentViewHW_1.swift in Sources */,
+				D0BDE1C02B792E1800DD9448 /* ColorLight.swift in Sources */,
 				D00E61442B6936F4004B51B0 /* ColorCircle.swift in Sources */,
+				D0BDE1C22B792E3D00DD9448 /* ChangeColorButton.swift in Sources */,
 				D086E9002B698642000CF25D /* TrafficLightCircles.swift in Sources */,
 				D00E61482B693EB2004B51B0 /* SwiftLogo.swift in Sources */,
 				D086E9022B69878B000CF25D /* StartButton.swift in Sources */,

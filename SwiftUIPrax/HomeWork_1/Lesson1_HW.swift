@@ -20,6 +20,7 @@ struct Lesson1_HW: View {
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
+            Spacer()
             VStack {
                 TrafficLightCircles(
                     activeLightIndex: $activeLightIndex,
