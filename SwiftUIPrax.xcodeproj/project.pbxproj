@@ -20,6 +20,7 @@
 		D0BDE1BE2B792DFE00DD9448 /* ContentViewHW_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BDE1BD2B792DFE00DD9448 /* ContentViewHW_1.swift */; };
 		D0BDE1C02B792E1800DD9448 /* ColorLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BDE1BF2B792E1800DD9448 /* ColorLight.swift */; };
 		D0BDE1C22B792E3D00DD9448 /* ChangeColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BDE1C12B792E3D00DD9448 /* ChangeColorButton.swift */; };
+		D0BDE1C42B793BF000DD9448 /* ContentViewL2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BDE1C32B793BF000DD9448 /* ContentViewL2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D0BDE1BD2B792DFE00DD9448 /* ContentViewHW_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHW_1.swift; sourceTree = "<group>"; };
 		D0BDE1BF2B792E1800DD9448 /* ColorLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLight.swift; sourceTree = "<group>"; };
 		D0BDE1C12B792E3D00DD9448 /* ChangeColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorButton.swift; sourceTree = "<group>"; };
+		D0BDE1C32B793BF000DD9448 /* ContentViewL2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewL2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		D0BDE1BB2B7921D100DD9448 /* Lesson_2 */ = {
 			isa = PBXGroup;
 			children = (
+				D0BDE1C32B793BF000DD9448 /* ContentViewL2.swift */,
 			);
 			path = Lesson_2;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				D086E9002B698642000CF25D /* TrafficLightCircles.swift in Sources */,
 				D00E61482B693EB2004B51B0 /* SwiftLogo.swift in Sources */,
 				D086E9022B69878B000CF25D /* StartButton.swift in Sources */,
+				D0BDE1C42B793BF000DD9448 /* ContentViewL2.swift in Sources */,
 				D00E61462B693D8C004B51B0 /* SwiftImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
