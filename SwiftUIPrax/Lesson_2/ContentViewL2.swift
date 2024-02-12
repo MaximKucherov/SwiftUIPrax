@@ -9,23 +9,37 @@ import SwiftUI
 
 struct ContentViewL2: View {
 
-    // State - определяет первичный источник данных
-    // State - должно быть private всегда
     @State private var sliderValue = Double.random(in: 0...255)
+    @State private var userName = ""
+    @State private var displayedName = ""
 
     var body: some View {
-        VStack {
-            // свойство без $ это просто считывание значения - пользователь не взаимодействует
-            // с этим элементом интерфейса
-            Text("\(lround(sliderValue))")
-                .font(.largeTitle)
-            // свойство с $ значит мы здесь меняем значение - связываем двухсторонней связью
-            // это для тех элементов с которыми может взаимодействовать пользователь
-            ColorSlider(value: $sliderValue, textColor: .red)
-            Spacer()
+        ZStack {
+            Color(white: 0.8)
+                .ignoresSafeArea()
+            VStack(spacing: 40) {
+                Text("\(lround(sliderValue))")
+                    .font(.largeTitle)
+                UserNameView(userName: displayedName)
+                ColorSlider(value: $sliderValue, textColor: .red)
+                TextField("Enter your name", text: $userName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                Button("Done", action: checkUserName) 
+                Spacer()
+            }
+            .padding()
         }
-        .padding()
     }
+
+    private func checkUserName() {
+        if let _ = Double(userName) {
+            userName = ""
+            return
+        }
+        displayedName = userName
+        userName = ""
+    }
+
 }
 
 #Preview {
@@ -33,10 +47,7 @@ struct ContentViewL2: View {
 }
 
 struct ColorSlider: View {
-    
-    // Binding - значит что свойство зависит от значений родительского представления sliderValue
-    // Binding - объявляем в дочерних структурах
-    // Binding - значение этого представления будем передавать из вне
+
     @Binding var value: Double
     var textColor: Color
 
@@ -47,5 +58,21 @@ struct ColorSlider: View {
             Text("255").foregroundStyle(textColor)
         }
         .padding(.horizontal)
+    }
+}
+
+struct UserNameView: View {
+
+    let userName: String
+
+    var body: some View {
+        HStack {
+            HStack(alignment: .firstTextBaseline) {
+                Text("USER NAME: ").frame(height: 60)
+                Text(userName)
+                    .font(.largeTitle)
+            }
+            Spacer()
+        }
     }
 }
