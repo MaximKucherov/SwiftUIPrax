@@ -24,12 +24,31 @@ struct ContentViewL2: View {
                 UserNameView(userName: displayedName)
                 ColorSlider(value: $sliderValue, textColor: .red)
                 TextField("Enter your name", text: $userName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+//                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .bordered()
                 Button("Done", action: checkUserName)
                     .alert(isPresented: $alertPresented) {
                         Alert(title: Text("Wrong Format"),
                               message: Text("Enter your name"))
                     }
+                VStack {
+                    Text("Welcome to ")
+//                        .font(.system(size: 60))
+//                        .foregroundStyle(.red)
+                        .bold()
+                    Text("SwiftUI")
+//                        .font(.system(size: 60))
+//                        .foregroundStyle(.red)
+                        .bold()
+                }
+                .font(.system(size: 60))
+                .foregroundStyle(.red)
+//                    .bold()
+//                    .lineLimit(2)
+//                    .multilineTextAlignment(.center)
+//                    .background(Color.blue)
+//                    .padding()
+//                    .background(Color.red)
                 Spacer()
             }
             .padding()
@@ -61,6 +80,8 @@ struct ColorSlider: View {
         HStack {
             Text("0").foregroundStyle(textColor)
             Slider(value: $value, in: 0...255, step: 1)
+                .background(textColor)
+                .cornerRadius(40)
             Text("255").foregroundStyle(textColor)
         }
         .padding(.horizontal)
@@ -80,5 +101,26 @@ struct UserNameView: View {
             }
             Spacer()
         }
+    }
+}
+
+struct BorderedViewModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+            .overlay(
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(lineWidth: 2)
+                    .foregroundColor(.blue)
+            )
+            .shadow(color: Color.gray.opacity(0.4), radius: 3, x: 1, y: 2)
+    }
+}
+
+extension TextField {
+    func bordered() -> some View {
+//        modifier(BorderedViewModifier()) - один вариант
+        // или второй вариант
+        ModifiedContent(content: self, modifier: BorderedViewModifier())
     }
 }
