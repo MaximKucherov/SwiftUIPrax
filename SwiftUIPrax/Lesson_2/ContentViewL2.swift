@@ -12,6 +12,7 @@ struct ContentViewL2: View {
     @State private var sliderValue = Double.random(in: 0...255)
     @State private var userName = ""
     @State private var displayedName = ""
+    @State private var alertPresented = false
 
     var body: some View {
         ZStack {
@@ -24,7 +25,11 @@ struct ContentViewL2: View {
                 ColorSlider(value: $sliderValue, textColor: .red)
                 TextField("Enter your name", text: $userName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                Button("Done", action: checkUserName) 
+                Button("Done", action: checkUserName)
+                    .alert(isPresented: $alertPresented) {
+                        Alert(title: Text("Wrong Format"),
+                              message: Text("Enter your name"))
+                    }
                 Spacer()
             }
             .padding()
@@ -34,6 +39,7 @@ struct ContentViewL2: View {
     private func checkUserName() {
         if let _ = Double(userName) {
             userName = ""
+            alertPresented.toggle()
             return
         }
         displayedName = userName
