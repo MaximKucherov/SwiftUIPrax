@@ -14,6 +14,8 @@
 		D00E61442B6936F4004B51B0 /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E61432B6936F4004B51B0 /* ColorCircle.swift */; };
 		D00E61462B693D8C004B51B0 /* SwiftImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E61452B693D8C004B51B0 /* SwiftImage.swift */; };
 		D00E61482B693EB2004B51B0 /* SwiftLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E61472B693EB2004B51B0 /* SwiftLogo.swift */; };
+		D01A08DB2B7D43610007BBC4 /* LessonHW_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A08DA2B7D43610007BBC4 /* LessonHW_2.swift */; };
+		D01A08DF2B7D4C360007BBC4 /* SliderHW_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A08DE2B7D4C360007BBC4 /* SliderHW_2.swift */; };
 		D05E2CAE2B7A808800BFA85A /* TableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E2CAD2B7A808800BFA85A /* TableImageView.swift */; };
 		D086E8FC2B6962EC000CF25D /* Lesson1_HW.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086E8FB2B6962EC000CF25D /* Lesson1_HW.swift */; };
 		D086E9002B698642000CF25D /* TrafficLightCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086E8FF2B698642000CF25D /* TrafficLightCircles.swift */; };
@@ -33,6 +35,8 @@
 		D00E61432B6936F4004B51B0 /* ColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
 		D00E61452B693D8C004B51B0 /* SwiftImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftImage.swift; sourceTree = "<group>"; };
 		D00E61472B693EB2004B51B0 /* SwiftLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLogo.swift; sourceTree = "<group>"; };
+		D01A08DA2B7D43610007BBC4 /* LessonHW_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonHW_2.swift; sourceTree = "<group>"; };
+		D01A08DE2B7D4C360007BBC4 /* SliderHW_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderHW_2.swift; sourceTree = "<group>"; };
 		D05E2CAD2B7A808800BFA85A /* TableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableImageView.swift; sourceTree = "<group>"; };
 		D086E8FB2B6962EC000CF25D /* Lesson1_HW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1_HW.swift; sourceTree = "<group>"; };
 		D086E8FF2B698642000CF25D /* TrafficLightCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightCircles.swift; sourceTree = "<group>"; };
@@ -94,11 +98,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D01A08D92B7D0E6D0007BBC4 /* HW_2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HW_2;
+			sourceTree = "<group>";
+		};
+		D01A08DC2B7D4BE40007BBC4 /* MyHW_1 */ = {
+			isa = PBXGroup;
+			children = (
+				D086E8FB2B6962EC000CF25D /* Lesson1_HW.swift */,
+			);
+			name = MyHW_1;
+			sourceTree = "<group>";
+		};
+		D01A08DD2B7D4C0E0007BBC4 /* MyHW_2 */ = {
+			isa = PBXGroup;
+			children = (
+				D01A08DA2B7D43610007BBC4 /* LessonHW_2.swift */,
+				D01A08DE2B7D4C360007BBC4 /* SliderHW_2.swift */,
+			);
+			path = MyHW_2;
+			sourceTree = "<group>";
+		};
 		D086E9032B698AEB000CF25D /* HomeWork_1 */ = {
 			isa = PBXGroup;
 			children = (
 				D0BDE1BC2B792D9700DD9448 /* HW_1 */,
-				D086E8FB2B6962EC000CF25D /* Lesson1_HW.swift */,
+				D01A08DC2B7D4BE40007BBC4 /* MyHW_1 */,
 				D086E8FF2B698642000CF25D /* TrafficLightCircles.swift */,
 				D086E9012B69878B000CF25D /* StartButton.swift */,
 			);
@@ -108,6 +136,8 @@
 		D0BDE1BB2B7921D100DD9448 /* Lesson_2 */ = {
 			isa = PBXGroup;
 			children = (
+				D01A08D92B7D0E6D0007BBC4 /* HW_2 */,
+				D01A08DD2B7D4C0E0007BBC4 /* MyHW_2 */,
 				D0BDE1C32B793BF000DD9448 /* ContentViewL2.swift */,
 				D05E2CAD2B7A808800BFA85A /* TableImageView.swift */,
 			);
@@ -195,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00E61382B6908CE004B51B0 /* ContentView.swift in Sources */,
+				D01A08DB2B7D43610007BBC4 /* LessonHW_2.swift in Sources */,
 				D00E61362B6908CE004B51B0 /* SwiftUIPraxApp.swift in Sources */,
 				D086E8FC2B6962EC000CF25D /* Lesson1_HW.swift in Sources */,
 				D0BDE1BE2B792DFE00DD9448 /* ContentViewHW_1.swift in Sources */,
@@ -206,6 +237,7 @@
 				D086E9022B69878B000CF25D /* StartButton.swift in Sources */,
 				D0BDE1C42B793BF000DD9448 /* ContentViewL2.swift in Sources */,
 				D00E61462B693D8C004B51B0 /* SwiftImage.swift in Sources */,
+				D01A08DF2B7D4C360007BBC4 /* SliderHW_2.swift in Sources */,
 				D05E2CAE2B7A808800BFA85A /* TableImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
