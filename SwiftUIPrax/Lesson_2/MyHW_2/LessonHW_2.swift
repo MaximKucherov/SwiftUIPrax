@@ -9,11 +9,17 @@ import SwiftUI
 
 struct Lesson2_HW: View {
 
-    @State private var firstSlider = Double.random(in: 0...255)
-
     var body: some View {
         ZStack {
             Color(.blue).ignoresSafeArea()
+            VStack {
+                RoundedRectangle(cornerRadius: 25.0, style: .continuous)
+                    .foregroundStyle(.green)
+                    .frame(CGSize(width: 350, height: 150))
+                    .overlay(RoundedRectangle(cornerRadius: 25.0).stroke(Color.white, lineWidth: 4))
+                Spacer()
+                
+            }
         }
     }
 }

@@ -9,22 +9,51 @@ import SwiftUI
 
 struct SliderHW_2: View {
 
-    @State private var leftSliderValue = 0.0
-    @State private var rightSliderValue = ""
+    @State private var sliderValue: Double = 0
+    @State private var isEditing = false
+    @State private var textFieldValue: String = ""
 
     var body: some View {
-        HStack {
-            Text("\(lround(leftSliderValue))")
-            Slider(value: $leftSliderValue, in: 0...255, step: 1)
-            TextField("0", text: $rightSliderValue)
+        ZStack {
+            Color.blue.ignoresSafeArea()
+            HStack {
+                Text("\(lround(sliderValue))")
+                    .foregroundStyle(Color.white)
+                    .frame(CGSize(width: 35, height: 45))
+
+                SliderColor(value: $sliderValue, tintColor: .red)
                 
-                .frame(width: 50)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+                ZStack(alignment: .trailing) {
+                    TextField("", text: $textFieldValue)
+                        .padding(.horizontal, 8)
+                        .frame(width: 75, height: 45)
+                        .multilineTextAlignment(.trailing)
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .keyboardType(.default)
+                    if textFieldValue.isEmpty {
+                        Text("\(lround(sliderValue))")
+                            .padding(.horizontal, 8)
+                    }
+
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
 #Preview {
     SliderHW_2()
+}
+
+struct SliderColor: View {
+
+    @Binding var value: Double
+    var tintColor: Color
+
+    var body: some View {
+        Slider(value: $value, in: 0...255).tint(tintColor)
+
+    }
 }
